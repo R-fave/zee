@@ -9,7 +9,7 @@ import CheckPage from "./components/checkout/CheckPage";
 
 function App() {
   const [cart, setCart] = useState([]);
-  const [state, setState] = useState("Pay");
+  const [state, setState] = useState("Shop");
   const [sum, setSum] = useState(0);
   return (
     // <Router>
