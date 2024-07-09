@@ -24,7 +24,7 @@ const Cartt = () => {
       <hr />
 
       <div class=" mt-12 flex max-sm:flex-col ">
-        <div class=" flex flex-col gap-6 flex-1">
+        <div class=" flex flex-col gap-6 flex-1 md:max-lg:h-[46vh] overflow-scroll h-[65vh] border max-sm:h-[10px]">
           {cart.map((items) => {
             return (
               <div class=" flex gap-6">
