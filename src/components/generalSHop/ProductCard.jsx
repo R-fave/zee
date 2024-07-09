@@ -27,7 +27,7 @@ const ProductCard = ({ name, img, cat, price, handleC, index }) => {
         <img src={star} alt="rating" /> <img src={heart} alt="like emoji" />
       </div>
       <button
-        class=" text-orange-600 font-medium bg-[#FFFCFB] py-1 px-6 block mx-auto rounded-md hover:bg-red-400 hover:text-white my-3 transition delay-75 duration-500"
+        class=" text-orange-600 font-medium bg-[#FFFCFB] py-1 px-6 block mx-auto rounded-md hover:bg-red-400 hover:text-white my-3 transition delay-75 duration-200"
         onClick={() => {
           handelCart(index);
         }}
