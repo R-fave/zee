@@ -58,7 +58,7 @@ const GeneralShop = () => {
         </button>
       </div>
 
-      <div class=" flex flex-wrap gap-x-48 gap-y-14 justify-center mt-20 px-24">
+      <div class=" flex flex-wrap gap-x-48 gap-y-14 justify-center py-20 px-24">
         {product.map((pro, index) => {
           return (
             <ProductCard
