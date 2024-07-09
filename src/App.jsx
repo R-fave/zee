@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import GeneralShop from "./components/generalSHop/GeneralShop";
+import Shop from "./components/generalSHop/Shop";
 import Nav from "./components/Nav";
 import { WebContext } from "./helper/Context";
 import Cartt from "./components/cart/Cartt";
@@ -26,7 +26,7 @@ function App() {
       value={{ cart, setCart, state, setState, sum, setSum }}
     >
       <Nav />
-      {state === "Shop" && <GeneralShop />}
+      {state === "Shop" && <Shop />}
       {state === "Cart" && <Cartt />}
       {state === "Pay" && <CheckPage />}
       <Footer />

@@ -11,8 +11,8 @@ const Cartt = () => {
   }, []);
 
   return (
-    <div class=" px-28 bg-gradient-to-b from-[#FFFCFB] to-[#FBCDBD]">
-      <div class=" mt-16 flex justify-evenly text-2xl font-bold mb-7">
+    <div class=" px-28 bg-gradient-to-b from-[#FFFCFB] to-[#FBCDBD] md:max-lg:px-10 max-sm:px-5">
+      <div class=" mt-16 flex justify-evenly text-2xl font-bold mb-7 max-sm:text-lg max-sm:justify-between">
         <div>
           <p>Cart</p>
         </div>
@@ -23,7 +23,7 @@ const Cartt = () => {
 
       <hr />
 
-      <div class=" mt-12 flex ">
+      <div class=" mt-12 flex max-sm:flex-col ">
         <div class=" flex flex-col gap-6 flex-1">
           {cart.map((items) => {
             return (
@@ -31,7 +31,7 @@ const Cartt = () => {
                 <img
                   src={items.img}
                   alt=""
-                  class=" w-[200px] h-[150px] object-cover rounded-lg"
+                  class=" w-[200px] h-[150px] object-cover rounded-lg md:max-lg:w-[150px] md:max-lg:h-[100px] max-sm:w-[100px] max-sm:h-[100px]"
                 />
                 <div>
                   <p class=" font-bold text-gray-700">{items.name}</p>
@@ -43,15 +43,17 @@ const Cartt = () => {
           })}
         </div>
 
-        <div class=" flex-1 px-10 border border-transparent border-l-black mb-10 ">
+        <div class=" flex-1 px-10 border border-transparent border-l-black mb-10 max-sm:px-0 max-sm:border-none max-sm:mt-10 ">
           <div class="flex flex-col gap-5">
-            <p class=" text-xl font-bold ">Payment Summary</p>
+            <p class=" text-xl font-bold max-sm:font-semibold max-sm:text-lg ">
+              Payment Summary
+            </p>
 
             <div class=" flex justify-between">
               <p class="text-sm font-bold">Promotions</p>
               <p class=" text-sm font-extralight underline">Promo Details</p>
             </div>
-            <div className=" bg-[#B1EAC8] text-current text-sm flex justify-center w-[70%] mx-auto py-2 ">
+            <div className=" bg-[#B1EAC8] text-current text-sm flex justify-center w-[70%] mx-auto py-2 max-sm:w-[90%] ">
               <p>50% off. Auto Applied at checkout.</p>
             </div>
           </div>
@@ -89,17 +91,17 @@ const Cartt = () => {
               </div>
             </div>
 
-            <div className=" bg-[#B1EAC8] text-current text-sm flex justify-center w-[70%] mx-auto py-2 ">
+            <div className=" bg-[#B1EAC8] text-current text-sm flex justify-center w-[70%] mx-auto py-2 max-sm:w-[90%] ">
               <p>50% off. Auto Applied at checkout.</p>
             </div>
 
-            <div class=" flex justify-between text-sm font-extralight mb-1 px-20">
+            <div class=" flex justify-between text-sm font-extralight mb-1 px-20 max-sm:px-5">
               <p>Estimated Tax</p>
               <p>Calculated in checkout</p>
             </div>
           </div>
 
-          <div class=" flex justify-between font-bold text-lg px-14 my-5">
+          <div class=" flex justify-between font-bold text-lg px-14 my-5 max-sm:px-5">
             <p>Total</p>
             <p>${sum + 50.0}</p>
           </div>

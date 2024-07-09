@@ -28,6 +28,8 @@ import sort from "../assets/sort.png";
 import star from "../assets/Star.png";
 import heart from "../assets/heart.png";
 import social from "../assets/social.png";
+import ham from "../assets/ham.png";
+import bag2 from "../assets/bag2.png";
 
 export {
   arrowLeft,
@@ -60,4 +62,6 @@ export {
   star,
   heart,
   social,
+  ham,
+  bag2,
 };

@@ -1,4 +1,4 @@
-import { arrowL, arrowR } from "../assets/img";
+import { arrowL, arrowR, bag2, ham } from "../assets/img";
 import { useContext } from "react";
 import { WebContext } from "../helper/Context";
 import { bag, logo, love, search, social, sort } from "../assets/img";
@@ -10,26 +10,49 @@ const Nav = () => {
   };
   return (
     <div>
-      <div class=" bg-[#171717] text-white px-12 py-5">
+      <div class=" bg-black py-10 justify-between items-center px-4 hidden max-sm:flex ">
+        <img src={ham} alt="" class=" w-7 h-7" />
+        <img
+          src={logo}
+          alt="store's Logo"
+          class="w-28"
+          onClick={() => {
+            setState("Shop");
+          }}
+        />
+        <div class=" relative mt-[-19px]">
+          <div class=" bg-red-500 text-white rounded-full flex justify-center items-center text-[9px] py-1 relative top-3 left-3  ">
+            <p>{cart.length}</p>
+          </div>
+
+          <img
+            src={bag2}
+            alt="shopping bag icon"
+            class=" w-6 h-6"
+            onClick={handleCart}
+          />
+        </div>
+      </div>
+      <div class=" bg-[#171717] text-white px-12 py-5 md:max-lg:px-3 max-sm:hidden">
         <div class=" flex gap-12 ">
-          <div class=" flex flex-1 justify-end pr-[13rem] gap-20 text-sm items-center font-extralight">
+          <div class=" flex flex-1 justify-end pr-[13rem] gap-20 text-sm items-center font-extralight md:max-lg:pr-[0] md:max-lg:pl-[2rem]">
             <img src={arrowL} alt="" />
             <p>Get 50% off for new members</p>
             <img src={arrowR} alt="" />
           </div>
-          <div class=" flex gap-5 text-sm items-center font-extralight">
-            <button class=" border border-blue-400 py-2 px-5 hover:bg-blue-400 hover:text-black transition delay-75 duration-500">
+          <div class=" flex gap-5 text-sm items-center font-extralight md:max-lg:gap-2">
+            <button class=" border border-blue-400 py-2 px-5 hover:bg-blue-400 hover:text-black transition delay-75 duration-500 md:max-lg:px-3">
               Sign In{" "}
             </button>
-            <button class=" border border-blue-400 py-2 px-5 hover:bg-blue-400 hover:text-black transition delay-75 duration-500">
+            <button class=" border border-blue-400 py-2 px-5 hover:bg-blue-400 hover:text-black transition delay-75 duration-500 md:max-lg:px-3">
               Find stores
             </button>
           </div>
         </div>
       </div>
 
-      <div class=" flex justify-between pt-5 px-28 ">
-        <div class=" flex items-center gap-16 text-sm font-extralight">
+      <div class=" flex justify-between pt-5 px-28 md:max-lg:px-10 max-sm:hidden ">
+        <div class=" flex items-center gap-16 text-sm font-extralight md:max-lg:gap-5">
           <img
             src={logo}
             alt="store's Logo"

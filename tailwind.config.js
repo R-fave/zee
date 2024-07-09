@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "bg-desk": 'url("/src/assets/land.png")',
+        "bg-mobile": 'url("/src/assets/por.png")',
       },
     },
   },

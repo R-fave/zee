@@ -16,7 +16,7 @@ const ProductCard = ({ name, img, cat, price, handleC, index }) => {
       <img
         src={img}
         alt="product image"
-        class=" w-[250px] h-[200px] object-cover rounded-tr-xl rounded-tl-xl"
+        class=" w-[250px] h-[200px] object-cover rounded-tr-xl rounded-tl-xl md:max-lg:w-[200px] md:max-lg:h-[150px] max-sm:w-[150px] max-sm:h-[100px]"
       />
       <div class=" px-2">
         <p class=" font-bold text-gray-700">{name}</p>
@@ -27,7 +27,7 @@ const ProductCard = ({ name, img, cat, price, handleC, index }) => {
         <img src={star} alt="rating" /> <img src={heart} alt="like emoji" />
       </div>
       <button
-        class=" text-orange-600 font-medium bg-[#FFFCFB] py-1 px-6 block mx-auto rounded-md hover:bg-red-400 hover:text-white my-3 transition delay-75 duration-200"
+        class=" text-orange-600 font-medium bg-[#FFFCFB] py-1 px-6 block max-sm:text-[13px] max-sm:px-2 mx-auto rounded-md hover:bg-red-400 hover:text-white my-3 transition delay-75 duration-200"
         onClick={() => {
           handelCart(index);
         }}
