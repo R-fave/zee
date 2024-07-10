@@ -12,7 +12,7 @@ const ProductCard = ({ name, img, cat, price, handleC, index }) => {
   };
 
   return (
-    <div class="rounded-xl flex flex-col gap-2 shadow-md pb-3">
+    <div class="rounded-xl flex flex-col gap-2 pb-3">
       <img
         src={img}
         alt="product image"
